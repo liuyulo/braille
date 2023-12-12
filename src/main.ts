@@ -52,7 +52,7 @@ let canvas = document.createElement('canvas');
 let context = canvas.getContext('2d')!;
 let ascii = '';
 
-on(document, 'DOMContentLoaded', function (e) {
+on(document, 'DOMContentLoaded', function (_) {
 
 	on($<HTMLInputElement>('#filepicker'), 'change', async function () {
 		if (!this.files || !this.files.length) return;
